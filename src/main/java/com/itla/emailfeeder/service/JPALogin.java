@@ -3,10 +3,6 @@ package com.itla.emailfeeder.service;
 import com.itla.emailfeeder.domain.Admin;
 import com.itla.emailfeeder.repository.JPAAdminDAO;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
-import java.util.List;
-
 /**
  * Created by Pimp on 24/05/2014.
  */

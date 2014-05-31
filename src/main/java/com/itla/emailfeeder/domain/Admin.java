@@ -2,7 +2,6 @@ package com.itla.emailfeeder.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by Pimp on 24/05/2014.
@@ -17,6 +16,8 @@ public class Admin implements Serializable{
     private String user;
     @Column(nullable = false)
     private String password;
+    //private boolean isActive;
+    private String lolazo;
 
     public int getId() {
         return id;
@@ -41,6 +42,23 @@ public class Admin implements Serializable{
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getLolazo() {
+        return lolazo;
+    }
+
+    public void setLolazo(String lolazo) {
+        this.lolazo = lolazo;
+    }
+
+    /*
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean isActive) {
+        this.isActive = isActive;
+    }*/
 
     @Override
     public int hashCode() {
